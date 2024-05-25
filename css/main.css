@@ -27,8 +27,14 @@ body.dark_mode{
     padding: 2%;
 }
 
+@font-face {
+    font-family: hifont;
+    src: url('../fonts/MonospaceTypewriter.ttf');
+}
+
 .greetings_content{
-    font-size: 18px;
+    font-family: hifont;
+    font-size: 16px;
 }
 
 .main_content{
