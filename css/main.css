@@ -114,12 +114,13 @@ body.dark_mode{
     color: #222831;
 }
 
-.about_title{
+.about_title, 
+.project_title{
     font-family: myfont;
 }
 
 .about_desc{
-    padding-top: 12%;
+    padding-top: 14%;
 }
 
 .dummy_desc{
@@ -127,6 +128,10 @@ body.dark_mode{
     padding-bottom: 3%;
     font-size: 14px;
     align-items: flex-start;
+}
+
+.about_line{
+    padding-bottom: 2%;
 }
 
 .about_line1,
