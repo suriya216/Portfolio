@@ -88,3 +88,7 @@ body.dark_mode{
     background-color: #eeeeee80;
     color: #222831;
 }
+
+.about_desc{
+    padding-top: 12%;
+}
