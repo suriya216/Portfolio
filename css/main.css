@@ -49,8 +49,34 @@ body.dark_mode{
 
 .name_content{
     font-family: myfont;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.desc_content {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+    animation: blink 0.75s step-end infinite alternate;
 }
 
 .desc_content{
@@ -99,7 +125,7 @@ body.dark_mode{
 .dummy_desc{
     font-family: hifont;
     padding-bottom: 3%;
-    font-size: 18px;
+    font-size: 14px;
     align-items: flex-start;
 }
 
