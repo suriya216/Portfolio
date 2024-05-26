@@ -72,8 +72,19 @@ body.dark_mode{
     border: 2px solid #22283180;
     border-radius: 7px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .dark_mode .check_resume{
     border-color: #ffffff80;
+}
+
+.check_resume:hover{
+    color: #eeeeee80;
+    background-color: #222831;
+}
+
+.dark_mode .check_resume:hover{
+    background-color: #eeeeee80;
+    color: #222831;
 }
