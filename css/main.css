@@ -23,7 +23,7 @@ body.dark_mode{
 .contact_btn, 
 .project_btn,
 .mode_btn{
-    padding: 2%;
+    padding: 1%;
 }
 
 @font-face {
