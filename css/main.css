@@ -115,7 +115,8 @@ body.dark_mode{
 }
 
 .about_title, 
-.project_title{
+.project_title,
+.contact_title{
     font-family: myfont;
 }
 
@@ -148,4 +149,17 @@ body.dark_mode{
     padding: 2% 0% 2% 0%;
     margin-left: 40%;
     font-size: 20px;
+}
+
+.project_tools{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.project_desc{
+    font-size: 20px;
+}
+
+.project_sec{
+    padding-bottom: 4%;
 }
