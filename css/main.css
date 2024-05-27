@@ -5,6 +5,7 @@ body{
     background-color: #EEEEEE;
     color: #222831;
     font-size: 25px;
+    padding-top: 60px;
 }
 
 body.dark_mode{
@@ -16,6 +17,21 @@ body.dark_mode{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.top_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: #22283180;
+}
+
+.dark_mode .top_navbar{
+    color: #eeeeee;
+    background-color: #eeeeee80;
 }
 
 .home_btn,
@@ -37,7 +53,7 @@ body.dark_mode{
 }
 
 .main_content{
-    padding-top: 7%;
+    padding-top: 12%;
     padding-bottom: 3%;
 }
 
@@ -105,7 +121,7 @@ body.dark_mode{
 }
 
 .check_resume:hover{
-    color: #eeeeee80;
+    color: #eeeeee;
     background-color: #222831;
 }
 
@@ -116,12 +132,13 @@ body.dark_mode{
 
 .about_title, 
 .project_title,
+.contact_title,
 .contact_title{
     font-family: myfont;
 }
 
 .about_desc{
-    padding-top: 14%;
+    padding-top: 10%;
 }
 
 .dummy_desc{
@@ -151,6 +168,10 @@ body.dark_mode{
     font-size: 20px;
 }
 
+.project_title{
+    padding-bottom: 2%;
+}
+
 .project_tools{
     font-style: italic;
     font-size: 14px;
@@ -161,7 +182,8 @@ body.dark_mode{
 }
 
 .project_sec{
-    padding-bottom: 4%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .project_link{
@@ -239,3 +261,73 @@ body.dark_mode{
           width: calc(50% - 10px);
       }
   }
+
+  .dark_mode .card{
+    color: #222831;
+  }
+
+  .dark_mode .project_detail{
+    color: #222831;
+  }
+
+  .dark_mode .project_link{
+    border-color: #22283180;
+  }
+
+ .contact_sec {
+     padding: 50px 0;
+     background-color: #eeeeee;
+ }
+
+ .contact_title {
+     margin-bottom: 30px;
+     color: #222831;
+ }
+
+ .contact_cards {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .contact_card {
+     background-color: #eeeeee;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+     margin: 20px;
+     padding: 30px;
+     max-width: 350px;
+     text-align: left;
+     transition: transform 0.3s ease-in-out;
+ }
+
+ .contact_card:hover {
+     transform: translateY(-5px);
+ }
+
+ .contact_card h3 {
+     color: #333;
+     margin-bottom: 10px;
+ }
+
+ .contact_card p {
+     color: #666;
+     margin-bottom: 15px;
+ }
+
+ .contact_card a {
+     color: #007bff;
+     text-decoration: none;
+     display: inline-block;
+     transition: color 0.3s ease-in-out;
+ }
+
+ .contact_card a:hover {
+     color: #0056b3;
+ }
+
+ @media (max-width: 768px) {
+     .contact_card {
+         width: 80%;
+     }
+ }

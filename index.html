@@ -12,18 +12,20 @@
   <title>My Portfolio</title>
 </head>
 <body>
-
+<div>
+  
+</div>
   <div class="top_navbar">
-    <div class="home_btn">
+    <div class="home_btn" data-target="main">
       <span>Home</span>
     </div>
-    <div class="about_btn">
+    <div class="about_btn" data-target="about">
       <span>About</span>
     </div>
-    <div class="project_btn">
+    <div class="project_btn" data-target="project">
       <span>Project</span>
     </div>
-    <div class="contact_btn">
+    <div class="contact_btn" data-target="contact">
       <span>Contact</span>
     </div>
     <div class="mode_btn">
@@ -31,7 +33,7 @@
     </div>
   </div>
 
-  <div class="main_content">
+  <div id="main" class="main_content">
     <span class="greetings_content">Hi, my name is</span>
     <br>
     <span class="name_content">Suriya Sankar.</span>
@@ -50,7 +52,7 @@
     <span class="resume_content">Check out my resume!</span>
   </div>
 
-  <div class="about_desc">
+  <div class="about_desc" id="about">
     <h2 class="about_title">About</h2>
     <div class="dummy_desc">
       <span>This section provides information about my background, skills, and experiences.</span>
@@ -80,9 +82,10 @@
     </div>
   </div>
 
-  <div class="project_sec">
+  <div class="project_sec" id="project">
     <h2 class="project_title">Project</h2>
       <div class="main_card">
+
         <div class="card">
           <div class="card-content">
             <div class="project_line1">
@@ -93,7 +96,6 @@
                 CRUD operations. It deals with the database to store the
                 information and to retrieve the same with the SQL
                 queries.</span>
-              <br>
               <div class="project_link">
                 <a href="https://github.com/suriya216/JavaProject" class="project_detail" target="_blank">See Detail</a>
               </div>
@@ -101,7 +103,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="project">
           <div class="card-content">
             <div class="project_line2">
               <h3>Automated Street Light System</h3>
@@ -172,9 +174,51 @@
           </div>
         </div>
       </div>
+    </div>
    
+    <div class="contact_sec" id="contact">
+      <h2 class="contact_title">Contact</h2>
+      <div class="contact_cards">
+        <div class="contact_card">
+          <h3>Email</h3>
+          <p>Send me an email at:</p>
+          <a href="mailto:sssuriya003@gmail.com">sssuriya003@gmail.com</a>
+        </div>
+        <div class="contact_card">
+          <h3>GitHub</h3>
+          <p>Check out my projects on GitHub:</p>
+          <a href="https://github.com/suriya216" target="_blank">suriya216</a>
+        </div>
+        <div class="contact_card">
+          <h3>LinkedIn</h3>
+          <p>Connect with me on LinkedIn:</p>
+          <a href="https://www.linkedin.com/in/suriya4603" target="_blank">suriya4603</a>
+        </div>
+      </div>
+    </div>
+
+
+
 </body>
+
 <script src="script/mode.js"></script>
+
 <script src="script/resume.js"></script>
+
 <script src="script/typing.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navButtons = document.querySelectorAll('.top_navbar > div[data-target]');
+
+    navButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  });
+</script>
+
 </html>
