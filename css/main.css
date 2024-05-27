@@ -93,10 +93,10 @@ body.dark_mode{
 }
 
 .check_resume{
-    padding: 3%;
+    padding: 2%;
     border: 2px solid #22283180;
     border-radius: 7px;
-    width: fit-content;
+    width: max-content;
     cursor: pointer;
 }
 
@@ -165,13 +165,39 @@ body.dark_mode{
 }
 
 .project_link{
-    padding: 2%;
+    padding: 1% 2%;
     border: 2px solid #22283180;
     border-radius: 7px;
     width: fit-content;
 }
 
+.project_detail{
+    color: #222831;
+    text-decoration: none;
+}
+
+.project_link:hover .project_detail{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .project_link:hover{
-    background-color: #22283180;
-    color: #eeeeee80;
+    background-color: #222831;
+}
+
+.dark_mode .project_detail{
+    color: #ffffff;
+}
+
+.dark_mode .project_link{
+    border-color: #ffffff80;
+}
+
+.dark_mode .project_link:hover .project_detail {
+    color: #222831;
+    text-decoration: none;
+}
+
+.dark_mode .project_link:hover{
+    background-color: #ffffff80;
 }
