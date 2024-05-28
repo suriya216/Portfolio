@@ -331,3 +331,11 @@ body.dark_mode{
          width: 80%;
      }
  }
+
+ .dark_mode .contact_sec{
+    background-color: #222831;
+ }
+
+ .dark_mode .contact_title{
+    color: #eeeeee;
+ }
