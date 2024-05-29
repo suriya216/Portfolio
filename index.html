@@ -8,6 +8,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <script src="script/mode.js"></script>
+  
+  <script src="script/resume.js"></script>
+  
+  <script src="script/typing.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navButtons = document.querySelectorAll('.top_navbar > div[data-target]');
+
+      navButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const targetId = this.getAttribute('data-target');
+          const targetElement = document.getElementById(targetId);
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
 
   <title>My Portfolio</title>
 </head>
@@ -201,24 +220,6 @@
 
 </body>
 
-<script src="script/mode.js"></script>
 
-<script src="script/resume.js"></script>
-
-<script src="script/typing.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const navButtons = document.querySelectorAll('.top_navbar > div[data-target]');
-
-    navButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        const targetId = this.getAttribute('data-target');
-        const targetElement = document.getElementById(targetId);
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  });
-</script>
 
 </html>
